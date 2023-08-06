@@ -16,6 +16,17 @@ namespace DSA.Other
             }
             return num;
         }
+
+        public static int getIntAtIndex(int num,int index)
+        {
+            double l = Math.Pow(10,index);
+            return num % (int)l;
+        }
+
+        public static int getLastInt(int num)
+        {
+            return num % 10;
+        }
         public static int counterIntegerWithOutString(int num)
         {
             int len = 0;
