@@ -11,7 +11,7 @@ namespace DSA // Note: actual namespace depends on the project name.
         
         public static void Main()
         {
-            BROKENSTRING.func();
+            Console.WriteLine(IntegerFunctions.getFirstInt(465));
         }
 
     }
