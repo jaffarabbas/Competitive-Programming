@@ -11,9 +11,7 @@ namespace DSA // Note: actual namespace depends on the project name.
         
         public static void Main()
         {
-            Console.WriteLine(IntegerFunctions.getFirstInt(465));
-            Console.WriteLine(IntegerFunctions.getLastInt(465));
-            Console.WriteLine(IntegerFunctions.getIntAtIndex(11230,4));
+           
         }
 
     }
