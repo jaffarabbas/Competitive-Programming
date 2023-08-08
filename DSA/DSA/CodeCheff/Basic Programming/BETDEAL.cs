@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSA.CodeCheff.Basic_Programming
 {
-    internal class MONOPOLY2
+    internal class BETDEAL
     {
         public static void func()
         {
@@ -16,16 +16,19 @@ namespace DSA.CodeCheff.Basic_Programming
                 string[] lines = Console.ReadLine().Split(' ');
                 int a = int.Parse(lines[0]);
                 int b = int.Parse(lines[1]);
-                int c = int.Parse(lines[2]);
-                int d = int.Parse(lines[3]);
-                if(a > (b + c + d) || b > (a + c + d) || c > (a + b + d) || d > (a + b + c))
+                int ap = (a / 100) * 100;
+                int bp = (b / 100) * 200;
+                if (ap == bp)
                 {
-                    Console.WriteLine("YES");
+                    Console.WriteLine("BOTH");
                 }
-                else
+                else if (ap < bp)
                 {
-                    Console.WriteLine("NO");
-                }
+                    Console.WriteLine("FIRST");
+                }else if(bp < ap) {
+                    Console.WriteLine("SECOND");
+
+                } 
                 t--;
             }
         }
