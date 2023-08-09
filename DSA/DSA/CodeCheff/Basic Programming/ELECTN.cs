@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSA.CodeCheff.Basic_Programming
 {
-    internal class BETDEAL
+    internal class ELECTN
     {
         public static void func()
         {
@@ -16,21 +16,21 @@ namespace DSA.CodeCheff.Basic_Programming
                 string[] lines = Console.ReadLine().Split(' ');
                 int a = int.Parse(lines[0]);
                 int b = int.Parse(lines[1]);
-                int ap = (a / 100) * 100;
-                int bp = (b / 100) * 200;
-                int af = 100 - ap;
-                int bf = 200 - bp;
-                if (af == bf)
+                int count = 0;
+                string[] p = Console.ReadLine().Split(' ');
+                int[] arr = new int[a];
+                for (int i = 0; i < p.Length; i++)
                 {
-                    Console.WriteLine("BOTH");
+                    arr[i] = int.Parse(p[i]);
                 }
-                else if (af < bf)
+                foreach (int i in arr)
                 {
-                    Console.WriteLine("FIRST");
-                }else if(bf < af) {
-                    Console.WriteLine("SECOND");
-
-                } 
+                    if(i >= b)
+                    {
+                        count++;
+                    }
+                }
+                Console.WriteLine(count);
                 t--;
             }
         }
