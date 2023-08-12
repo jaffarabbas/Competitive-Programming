@@ -13,15 +13,16 @@ namespace DSA.CodeCheff.Basic_Programming
             string[] lines = Console.ReadLine().Split(' ');
             int a = int.Parse(lines[0]);
             int b = int.Parse(lines[1]);
-            if(a > b)
+            if ((a-b) > 0)
             {
-                int f = a - b;
-                Console.WriteLine(f);
-            }
-            else
-            {
-                int f = a + b;
-                Console.WriteLine(f);
+                if (a > b)
+                {
+                    Console.WriteLine(a - b);
+                }
+                else
+                {
+                    Console.WriteLine(a + b);
+                }
             }
         }
     }
