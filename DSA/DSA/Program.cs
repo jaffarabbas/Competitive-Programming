@@ -6,22 +6,24 @@ namespace DSA // Note: actual namespace depends on the project name.
     {
         public static void Main()
         {
-            int a = int.Parse(Console.ReadLine());
-            while (a > 0)
+            int t = int.Parse(Console.ReadLine());
+            while (t > 0)
             {
-                string[] lines = Console.ReadLine().Split(' ');
-                int x = int.Parse(lines[0]);
-                int y = int.Parse(lines[1]);
-                int z = int.Parse(lines[2]);
-                if ((x + y) >= 10 || (x + z) >= 10 || ((y+z) >= 10))
+                int count = 0;
+                int n = int.Parse(Console.ReadLine());
+                string a = Console.ReadLine();
+                char[] arr = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+                string f = String.Concat(a.OrderBy(c => c));
+                for (int i = 0; i < arr.Length; i++)
                 {
-                    Console.WriteLine("YES");
+                    count++;
+                    if (f.Last() == arr[i])
+                    {
+                        break;
+                    }
                 }
-                else
-                {
-                    Console.WriteLine("NO");
-                }
-                a--;
+                Console.WriteLine(count);
+                t--;
             }
         }   
     }
