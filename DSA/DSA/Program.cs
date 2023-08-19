@@ -9,7 +9,7 @@ namespace DSA // Note: actual namespace depends on the project name.
     {
         public static void Main()
         {
-            FLOW008.func();
+            TLG.func();
         }   
     }
 }
