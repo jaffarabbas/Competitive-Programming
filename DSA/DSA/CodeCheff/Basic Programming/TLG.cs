@@ -25,7 +25,7 @@ namespace DSA.CodeCheff.Basic_Programming
                 x += a;
                 y += b;
 
-                int diff = Math.Abs(x - y);
+                int diff = x - y;
 
                 if (diff > maxDiff)
                 {

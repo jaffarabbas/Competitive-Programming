@@ -1,15 +1,25 @@
 ﻿
-
-using DSA.CodeCheff.Basic_Programming;
 using System;
 
-namespace DSA // Note: actual namespace depends on the project name.
+namespace DSA 
 {
     internal class Program
     {
         public static void Main()
         {
-            TLG.func();
+            int n = int.Parse(Console.ReadLine());
+            while (n > 1)
+            {
+                if (n % 2 == 0)
+                {
+                    n /= 2;
+                }
+                else
+                {
+                    n = (n * 3) + 1;
+                }
+                Console.Write(n + " ");
+            }
         }   
     }
 }

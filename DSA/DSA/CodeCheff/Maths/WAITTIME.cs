@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSA.CodeCheff.Math
+namespace DSA.CodeCheff.Maths
 {
     internal class WAITTIME
     {
