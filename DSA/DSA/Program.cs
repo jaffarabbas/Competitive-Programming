@@ -7,18 +7,42 @@ namespace DSA
     {
         public static void Main()
         {
-            int n = int.Parse(Console.ReadLine());
-            while (n > 1)
+            int t = int.Parse(Console.ReadLine());
+            while ((t--) > 0)
             {
-                if (n % 2 == 0)
+                string[] lines = Console.ReadLine().Split(' ');
+                int a = int.Parse(lines[0]);
+                int b = int.Parse(lines[1]);
+                int c = int.Parse(lines[2]);
+                int f = 0, w = 0;
+                bool flag = false;
+                if (a % b == 0)
                 {
-                    n /= 2;
+                    f = a * c;
+                    w = b;
+                }
+                else if (a % c == 0)
+                {
+                    f = a * b;
+                    w = c;
+                }
+                else if (b % c == 0)
+                {
+                    f = b * a;
+                    w = c;
                 }
                 else
                 {
-                    n = (n * 3) + 1;
+                    flag = true;
                 }
-                Console.Write(n + " ");
+                if (!flag)
+                {
+                    Console.WriteLine(f + " " + w);
+                }
+                else
+                {
+                    Console.WriteLine(-1);
+                }
             }
         }   
     }
