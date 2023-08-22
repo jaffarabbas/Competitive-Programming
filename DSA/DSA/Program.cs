@@ -14,35 +14,21 @@ namespace DSA
                 int a = int.Parse(lines[0]);
                 int b = int.Parse(lines[1]);
                 int c = int.Parse(lines[2]);
-                int f = 0, w = 0;
-                bool flag = false;
-                if (a % b == 0)
+                if ((a*b) % c == 0)
                 {
-                    f = a * c;
-                    w = b;
-                }
-                else if (a % c == 0)
+                    Console.WriteLine((a*b)+" "+c);
+                }else if ((a*c) % b == 0)
                 {
-                    f = a * b;
-                    w = c;
-                }
-                else if (b % c == 0)
+                    Console.WriteLine((a*c)+" "+b);
+                }else if((b * c) % a == 0)
                 {
-                    f = b * a;
-                    w = c;
-                }
-                else
-                {
-                    flag = true;
-                }
-                if (!flag)
-                {
-                    Console.WriteLine(f + " " + w);
+                    Console.WriteLine((b*c)+" "+a);
                 }
                 else
                 {
                     Console.WriteLine(-1);
                 }
+                
             }
         }   
     }
