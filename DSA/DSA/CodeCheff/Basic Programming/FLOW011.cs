@@ -6,26 +6,27 @@ using System.Threading.Tasks;
 
 namespace DSA.CodeCheff.Basic_Programming
 {
-    internal class SUPCHEF
+    internal class FLOW011
     {
         public static void func()
         {
             int t = int.Parse(Console.ReadLine());
             while((t--) > 0)
             {
-                string[] lines = Console.ReadLine().Split(" ");
-                int a = int.Parse(lines[0]);
-                int b = int.Parse(lines[1]);
-                int c = int.Parse(lines[2]);
-                int f = c * b;
-                if(f < a)
+                int a = int.Parse(Console.ReadLine());
+                float h = 0,d = 0;
+                if(a < 1500)
                 {
-                    Console.WriteLine("YES");
+                    h = (a / 10) * 100;
+                    d = (a / 90) * 100;
                 }
                 else
                 {
-                    Console.WriteLine("NO");
+                    h = 500;
+                    d = (a / 98) * 100;
                 }
+                float f = a + h + d;
+                Console.WriteLine(f);
             }
         }
     }
