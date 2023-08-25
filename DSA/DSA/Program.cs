@@ -10,20 +10,16 @@ namespace DSA
             int t = int.Parse(Console.ReadLine());
             while ((t--) > 0)
             {
-                float a = int.Parse(Console.ReadLine());
-                float h = 0, d = 0;
+                double a = int.Parse(Console.ReadLine());
+                double h = 0, d = 0;
                 if (a < 1500)
                 {
-                    h = (a / 100) * 10;
-                    d = (a / 100) * 90;
+                    Console.WriteLine(a + (0.1 * a) + (0.9 * a));
                 }
                 else
                 {
-                    h = 500;
-                    d = (a / 100) * 98;
+                    Console.WriteLine(a + 500 + (0.98 * a));
                 }
-                float f = a + h + d;
-                Console.WriteLine(f);
             }
         }   
     }
