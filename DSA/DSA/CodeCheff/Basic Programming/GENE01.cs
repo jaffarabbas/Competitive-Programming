@@ -14,7 +14,16 @@ namespace DSA.CodeCheff.Basic_Programming
             char a = char.Parse(lines[0]);
             char b = char.Parse(lines[1]);
             char[] l = { 'R', 'B', 'G' };
-
+            int v1 = Array.FindIndex(l, value => value.Equals(a));
+            int v2 = Array.FindIndex(l, value => value.Equals(b));
+            if(v1 <= v2)
+            {
+                Console.WriteLine(l[v1]);
+            }
+            else
+            {
+                Console.WriteLine(l[v2]);
+            }
         }
     }
 }
