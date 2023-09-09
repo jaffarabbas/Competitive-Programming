@@ -10,28 +10,25 @@ namespace DSA
             int t = int.Parse(Console.ReadLine());
             while ((t--) > 0)
             {
-                string[] lines = Console.ReadLine().Split(" ");
-                int a = int.Parse(lines[0]);
-                int b = int.Parse(lines[1]);
-                //squre
-                b = b * b;
-                int bmi = a / b;
-                if (bmi <= 18)
+                string[] d = Console.ReadLine().Split(" ");
+                string[] d2 = Console.ReadLine().Split(" ");
+                char[] ca = Array.ConvertAll(d, Char.Parse);
+                char[] cp = Array.ConvertAll(d2, Char.Parse);
+                char cp1 = cp[0];
+                char cp2 = cp[1];
+                int cpa = 0, cpa2 = 0;
+                for (int i = 0; i < ca.Length; i++)
                 {
-                    Console.WriteLine(1);
+                    if (ca[i] == cp1)
+                    {
+                        cpa = i;
+                    }
+                    else if (ca[i] == cp2)
+                    {
+                        cpa2 = i;
+                    }
                 }
-                else if (bmi >= 19 && bmi <= 24)
-                {
-                    Console.WriteLine(2);
-                }
-                else if (bmi >= 25 && bmi <= 29)
-                {
-                    Console.WriteLine(3);
-                }
-                else if (bmi >= 30)
-                {
-                    Console.WriteLine(4);
-                }
+                Console.WriteLine(cpa + " " + cpa2);
             }
         }   
     }
