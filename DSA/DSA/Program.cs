@@ -28,7 +28,14 @@ namespace DSA
                         cpa2 = i;
                     }
                 }
-                Console.WriteLine(cpa + " " + cpa2);
+                if(cpa < cpa2)
+                {
+                    Console.WriteLine(ca[cpa]);
+                }
+                else
+                {
+                    Console.WriteLine(ca[cpa2]);
+                }
             }
         }   
     }
