@@ -25,12 +25,20 @@ namespace DSA.CodeCheff.Basic_Programming
                     if (ca[i] == cp1)
                     {
                         cpa = i;
-                    }else if (ca[i] == cp2)
+                    }
+                    else if (ca[i] == cp2)
                     {
                         cpa2 = i;
                     }
                 }
-                Console.WriteLine(cpa+" "+cpa2);
+                if (cpa < cpa2)
+                {
+                    Console.WriteLine(ca[cpa]);
+                }
+                else
+                {
+                    Console.WriteLine(ca[cpa2]);
+                }
             }
         }
     }
