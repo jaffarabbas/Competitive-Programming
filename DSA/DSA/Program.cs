@@ -10,33 +10,68 @@ namespace DSA
             int t = int.Parse(Console.ReadLine());
             while ((t--) > 0)
             {
-                string[] d = Console.ReadLine().Split(" ");
-                string[] d2 = Console.ReadLine().Split(" ");
-                char[] ca = Array.ConvertAll(d, Char.Parse);
-                char[] cp = Array.ConvertAll(d2, Char.Parse);
-                char cp1 = cp[0];
-                char cp2 = cp[1];
-                int cpa = 0, cpa2 = 0;
-                for (int i = 0; i < ca.Length; i++)
+                int x = int.Parse(Console.ReadLine());
+                int c = 0;
+                if (x != 50)
                 {
-                    if (ca[i] == cp1)
+                    for (int i = 1; i <= 100; i++)
                     {
-                        cpa = i;
+                        if (x > 50)
+                        {
+                            x -= 3;
+                            c++;
+                        }
+                        if (x < 50)
+                        {
+                            x += 2;
+                            c++;
+                        }
+                        if (x == 50)
+                        {
+                            break;
+                        }
                     }
-                    else if (ca[i] == cp2)
-                    {
-                        cpa2 = i;
-                    }
-                }
-                if(cpa < cpa2)
-                {
-                    Console.WriteLine(ca[cpa]);
+                    Console.WriteLine(c);
                 }
                 else
                 {
-                    Console.WriteLine(ca[cpa2]);
+                    Console.WriteLine(0);
                 }
             }
+            //int t = int.Parse(Console.ReadLine());
+            //while ((t--) > 0)
+            //{
+            //    int c = int.Parse(Console.ReadLine());
+            //    string[] lines = Console.ReadLine().Split(" ");
+            //    string[] lines2 = Console.ReadLine().Split(" ");
+            //    int[] a1 = Array.ConvertAll(lines, int.Parse);
+            //    int[] a2 = Array.ConvertAll(lines2, int.Parse);
+            //    int count = 0;
+            //    for (int i = 0; i < c; i++)
+            //    {
+            //        int h1 = 0, h2 = 0;
+            //        if (a1[i] != a2[i])
+            //        {
+            //            if (a1[i] * 2 > a2[i])
+            //            {
+            //                h1++;
+            //            }
+            //            if (a2[i] > a1[i] * 2)
+            //            {
+            //                h2++;
+            //            }
+            //        }
+            //        else
+            //        {
+            //            h1++;h2++;
+            //        }
+            //        if(h1 == h2)
+            //        {
+            //            count++;
+            //        }
+            //    }
+            //    Console.WriteLine(count);
+            //}
         }   
     }
 }
