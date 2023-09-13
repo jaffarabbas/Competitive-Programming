@@ -7,36 +7,20 @@ namespace DSA
     {
         public static void Main()
         {
-            int t = int.Parse(Console.ReadLine());
-            while ((t--) > 0)
+            long t = long.Parse(Console.ReadLine());
+            long len = 0;
+            while (t > 0)
             {
-                int x = int.Parse(Console.ReadLine());
-                int c = 0;
-                if (x != 50)
-                {
-                    for (int i = 1; i <= 100; i++)
-                    {
-                        if (x > 50)
-                        {
-                            x -= 3;
-                            c++;
-                        }
-                        if (x < 50)
-                        {
-                            x += 2;
-                            c++;
-                        }
-                        if (x == 50)
-                        {
-                            break;
-                        }
-                    }
-                    Console.WriteLine(c);
-                }
-                else
-                {
-                    Console.WriteLine(0);
-                }
+                t /= 10;
+                len++;
+            }
+            if(len > 3)
+            {
+                Console.WriteLine("More than 3 digits");
+            }
+            else
+            {
+                Console.WriteLine(len);
             }
             //int t = int.Parse(Console.ReadLine());
             //while ((t--) > 0)
