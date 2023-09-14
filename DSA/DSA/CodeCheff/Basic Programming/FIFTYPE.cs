@@ -41,5 +41,6 @@ namespace DSA.CodeCheff.Basic_Programming
                     Console.WriteLine(0);
                 }
             }
+        }
     }
 }

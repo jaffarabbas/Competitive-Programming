@@ -18,23 +18,15 @@ namespace DSA.CodeCheff.Basic_Programming
                 string[] lines2 = Console.ReadLine().Split(" ");
                 int[] a1 = Array.ConvertAll(lines, int.Parse);
                 int[] a2 = Array.ConvertAll(lines2, int.Parse);
-                int h1 = 0,h2 = 0;
+                int count = 0;
                 for (int i = 0; i < c; i++)
                 {
-                    if (a1[i] * 2 > a2[i])
+                    if (a1[i] * 2 >= a2[i] && a2[i] * 2 >= a1[i])
                     {
-                        h1++;
-                    }
-                    else if (a2[i] * 2 > a1[i])
-                    {
-                        h2++;
-                    }
-                    else
-                    {
-                        h1++;h2++;
+                        count++;
                     }
                 }
-                Console.WriteLine(h1+h2);
+                Console.WriteLine(count);
             }
         }
     }
