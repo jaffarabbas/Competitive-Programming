@@ -10,7 +10,7 @@ namespace DSA
             int t = int.Parse(Console.ReadLine());
             while ((t--) > 0)
             {
-                string[] s = Console.ReadLine().Split(" ");
+                string[] st = Console.ReadLine().Split(" ");
                 int a = Convert.ToInt32(st[0]);
                 int b = Convert.ToInt32(st[1]);
                 int c = Convert.ToInt32(st[2]);
