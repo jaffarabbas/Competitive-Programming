@@ -14,11 +14,19 @@ namespace DSA.CodeCheff.Basic_Programming
             while ((t--) > 0)
             {
                 string[] st = Console.ReadLine().Split(" ");
-                int a = Convert.ToInt32(st[0]);
-                int b = Convert.ToInt32(st[1]);
-                int c = Convert.ToInt32(st[2]);
-                int d = Convert.ToInt32(st[3]);
-                
+                int h = Convert.ToInt32(st[0]);
+                int x = Convert.ToInt32(st[1]);
+                int y = Convert.ToInt32(st[2]);
+                int c = Convert.ToInt32(st[3]);
+                int r = (x + (y / 2)) * h;
+                if(r <= c)
+                {
+                    Console.WriteLine("YES");
+                }
+                else
+                {
+                    Console.WriteLine("NO");
+                }
             }
         }
     }
