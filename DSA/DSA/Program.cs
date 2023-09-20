@@ -10,17 +10,32 @@ namespace DSA
             int t = int.Parse(Console.ReadLine());
             while ((t--) > 0)
             {
-                string[] st = Console.ReadLine().Split(" ");
-                int a = Convert.ToInt32(st[0]);
-                int b = Convert.ToInt32(st[1]);
-                int c = Convert.ToInt32(st[2]);
-                int d = Convert.ToInt32(st[3]);
-                int count = 0, j;
-                for (j = 1; j <= 10; j++)
+                string[] lines = Console.ReadLine().Trim().Split(" ");
+                int[] arr = Array.ConvertAll(lines, int.Parse);
+                int count = 0, count2 = 0;
+                for (int i = 0; i < arr.Length; i++)
                 {
-                    if ((a <= j && j <= b) || (c <= j && j <= d)) count++;
+                    if (arr[i] %2 == 0)
+                    {
+                        count+=arr[i];
+                    }
+                    else
+                    {
+                        count2 += arr[i];
+                    }
                 }
-                Console.WriteLine(count);
+                if (count > count2)
+                {
+                    Console.WriteLine(1);
+                }
+                else if (count < count2)
+                {
+                    Console.WriteLine(2);
+                }
+                else
+                {
+                    Console.WriteLine(0);
+                }
             }
         }   
     }
