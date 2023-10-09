@@ -14,18 +14,18 @@ namespace DSA.CodeCheff.Basic_Programming
             while (t-- > 0)
             {
                 int[] l = Array.ConvertAll(Console.ReadLine().Split(" "), int.Parse);
-                if (l[0] > l[1] && l[0] > l[2])
+                int a = 0;
+                int le = l[0];
+                for (int i = 1; i <= le; i++)
                 {
-                    Console.WriteLine("Alice");
+                    if (a < 0)
+                    {
+                        a = -1;
+                        break;
+                    }
+                    a = l[0] - l[1];
                 }
-                else if (l[1] > l[0] && l[1] > l[2])
-                {
-                    Console.WriteLine("Bob");
-                }
-                else if (l[2] > l[0] && l[2] > l[1])
-                {
-                    Console.WriteLine("Charlie");
-                }
+                Console.WriteLine(l[0] < l[1] ? 0 : a);
             }
         }
     }

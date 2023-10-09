@@ -1,11 +1,14 @@
-﻿
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace DSA 
+namespace DSA.CodeCheff.Basic_Programming
 {
-    internal class Program
+    internal class COMPCAND
     {
-        public static void Main()
+        public static void func()
         {
             int t = int.Parse(Console.ReadLine());
             while (t-- > 0)
@@ -20,6 +23,6 @@ namespace DSA
                     Console.WriteLine(-1);
                 }
             }
-        }   
+        }
     }
 }
