@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i+syqgqxYDUBQxEvebuS/6F80TM0r71coahAHbgN13KHh2lg9jtxdhZGZgACfQJJiBa5HY2lmy5NrHuYRFNzvg==",
+  "dgSpecHash": "m6BZlr5maxinJp11BgdWSlPynr1UX/cQq3vOwSNfxaC3z7JEPpCWoMHibA/2FnMDG1U7J2HFAbih6/rzKUtjtw==",
   "success": true,
-  "projectFilePath": "/home/darklord/Desktop/GitHub/Competitive-Programming/DSA/DSA/DSA.csproj",
-  "expectedPackageFiles": [
-    "/home/darklord/.nuget/packages/microsoft.netcore.app.ref/6.0.25/microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
-    "/home/darklord/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.25/microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
-    "/home/darklord/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.25/microsoft.netcore.app.host.linux-x64.6.0.25.nupkg.sha512"
-  ],
+  "projectFilePath": "J:\\GitHub\\Competitive-Programming\\DSA\\DSA\\DSA.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
