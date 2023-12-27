@@ -2,7 +2,7 @@ using System;
 
 public class Test
 {
-	public static void Main()
+	public static void func()
 	{
 		int t = int.Parse(Console.ReadLine());
 		while((t--) > 0){
