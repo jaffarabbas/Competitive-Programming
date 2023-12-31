@@ -48,7 +48,6 @@ J:\GitHub\Competitive-Programming\DSA\DSA\bin\Debug\net6.0\DSA.deps.json
 J:\GitHub\Competitive-Programming\DSA\DSA\bin\Debug\net6.0\DSA.runtimeconfig.json
 J:\GitHub\Competitive-Programming\DSA\DSA\bin\Debug\net6.0\DSA.dll
 J:\GitHub\Competitive-Programming\DSA\DSA\bin\Debug\net6.0\DSA.pdb
-J:\GitHub\Competitive-Programming\DSA\DSA\obj\Debug\net6.0\DSA.csproj.AssemblyReference.cache
 J:\GitHub\Competitive-Programming\DSA\DSA\obj\Debug\net6.0\DSA.GeneratedMSBuildEditorConfig.editorconfig
 J:\GitHub\Competitive-Programming\DSA\DSA\obj\Debug\net6.0\DSA.AssemblyInfoInputs.cache
 J:\GitHub\Competitive-Programming\DSA\DSA\obj\Debug\net6.0\DSA.AssemblyInfo.cs
@@ -58,3 +57,4 @@ J:\GitHub\Competitive-Programming\DSA\DSA\obj\Debug\net6.0\refint\DSA.dll
 J:\GitHub\Competitive-Programming\DSA\DSA\obj\Debug\net6.0\DSA.pdb
 J:\GitHub\Competitive-Programming\DSA\DSA\obj\Debug\net6.0\DSA.genruntimeconfig.cache
 J:\GitHub\Competitive-Programming\DSA\DSA\obj\Debug\net6.0\ref\DSA.dll
+J:\GitHub\Competitive-Programming\DSA\DSA\obj\Debug\net6.0\DSA.sourcelink.json
