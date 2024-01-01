@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DSA.CodeCheff.Basic_Programming
 {
-    public partial class CPRIVAL
+    public class CPRIVAL
     {
         public static void func()
         {
