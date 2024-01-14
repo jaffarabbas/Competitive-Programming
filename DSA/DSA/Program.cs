@@ -8,7 +8,7 @@ namespace DSA
     {
         public static void Main()
         {
-            AVGPROBLEM.func();
+            CAN_REACH.func();
         }   
     }
 }
