@@ -8,7 +8,7 @@ namespace DSA
     {
         public static void Main()
         {
-            CAN_REACH.func();
+            PHONEYR.func();
         }   
     }
 }
