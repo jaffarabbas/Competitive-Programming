@@ -8,7 +8,7 @@ namespace DSA
     {
         public static void Main()
         {
-            PHONEYR.func();
+            SUGARCANE.func();
         }   
     }
 }
