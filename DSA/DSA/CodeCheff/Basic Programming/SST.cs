@@ -14,7 +14,18 @@ namespace DSA.CodeCheff.Basic_Programming
             while (t-- > 0)
             {
                 int[] l = Array.ConvertAll(Console.ReadLine().Split(" "), int.Parse);
-                
+                if ((l[0] * 100) == (l[1] * 50))
+                {
+                    Console.WriteLine("ANY");
+                }
+                else if ((l[0] * 100) > (l[1] * 50))
+                {
+                    Console.WriteLine("FIRST");
+                }
+                else
+                {
+                    Console.WriteLine("SECOND");
+                }
             }
         }
     }
