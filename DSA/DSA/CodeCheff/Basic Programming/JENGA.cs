@@ -14,7 +14,7 @@ namespace DSA.CodeCheff.Basic_Programming
             while (t-- > 0)
             {
                 int[] l = Array.ConvertAll(Console.ReadLine().Split(" "), int.Parse);
-                Console.WriteLine(l[0] <= l[1]? "YES" : "NO");
+                Console.WriteLine(l[1] % l[0] == 0? "YES" : "NO");
             }
         }
     }
