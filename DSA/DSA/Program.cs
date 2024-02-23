@@ -8,7 +8,7 @@ namespace DSA
     {
         public static void Main()
         {
-            SUGARCANE.func();
+            POLTHIEF.func();
         }   
     }
 }
